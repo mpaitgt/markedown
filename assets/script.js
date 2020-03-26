@@ -5,7 +5,37 @@ window.onload = function() {
   userText.value = 
   `
   # hello world
+  ---
   ## my name is matt
+  [My Bandcamp!](https://mattpignatore.bandcamp.com/)
+
+  HTML : \`<div></div>\`
+
+  ### here's a list of things i like:
+  - movies
+  - cooking
+  - music
+  - coding
+
+  \`\`\`
+  const thisIsCool = true;
+
+  function isThisCool() {
+    if (thisIsCool) {
+      console.log('confirmed');
+    } else {
+      console.log('well then');
+    }
+  }
+
+  isThisCool(thisIsCool);
+  \`\`\`
+
+  __this is bold!__
+  _this is italic_
+  ~~this is cross~~
+  > blockquote!!!
+  
 
   `;
 
@@ -15,9 +45,3 @@ window.onload = function() {
 document.addEventListener('keyup', function() {
   preview.innerHTML = marked(userText.value);
 })
-
-
-
-
-
-//# Marked in the browser\n\nRendered by **marked**.
